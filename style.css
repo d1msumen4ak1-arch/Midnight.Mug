@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fdf6f0;
+  color: #4a2c2a;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #5a3825;
+}
+
+button {
+  background: #a47148;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5a3825;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item {
+  background: #fff;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 15px;
+  width: 200px;
+  border-radius: 8px;
+}
+
+.menu-item img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* Footer Animasi */
+#thankyou {
+  margin-top: 20px;
+  padding: 10px;
+  background: #f5e6da;
+  border-top: 2px solid #5a3825;
+}
+
+#thankyou span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.logo-kopi {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
