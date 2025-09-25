@@ -1,8 +1,12 @@
 // Produk awal
 let products = [
-  {name: "Cheesecake", price: 25000, desc: "Cheesecake lembut dengan rasa manis seimbang.", img: "cheesecake.jpg"},
+  
+  {name: "Cappuccino", price: 25000, desc: "Espresso dengan susu hangat dan busa lembut", img: "cappuccino.jpg"},
+  {name: "Red velvet cake", price: 28000, desc: "Kue red velvet lembut dengan cream cheese frosting.", img: "velvet-cake.jpg"},
+  {name: "Latte Caramel", price: 25000, desc: "Latte manis dengan sirup caramel spesial.", img: "latte-caramel.jpg"},
+  {name: "Cheesecake", price: 25000, desc: "Cheesecake lembut dengan rasa manis seimbang.", img: "cheesake.jpg"},
   {name: "Taro Latte", price: 22000, desc: "Latte taro ungu lembut dan creamy.", img: "taro-latte.jpg"},
-  {name: "Croissant Butter", price: 18000, desc: "Croissant renyah dengan butter harum.", img: "croissant.jpg"},
+  {name: "Croissant Butter", price: 18000, desc: "Croissant renyah dengan butter harum.", img: "croissant-butter.jpg"},
   {name: "Vanilla Cold Brew", price: 28000, desc: "Kopi cold brew dengan vanilla.", img: "vanilla.jpg"},
   {name: "Mango Smoothie", price: 24000, desc: "Smoothie mangga segar alami.", img: "mango.jpg"},
   {name: "Waffle Ice Cream", price: 30000, desc: "Waffle hangat dengan es krim lembut.", img: "waffle.jpg"}
