@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midnight Mug</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Halaman Welcome -->
+     <section id="welcome"></section>
+  <div class="welcome-content">
+    <!-- Tambahkan gambar café di sini -->
+    <img src="caffe.jpg" alt="Foto Caffe Midnight Mug" class="welcome-img">
+
+  <!-- Halaman Awal -->
+  <section id="homePage">
+    <h1>Selamat Datang di Midnight Mug</h1>
+    <button onclick="showMenu()">Lihat Menu</button>
+    <button onclick="showAddMenu()">Tambah Menu Baru</button>
+  </section>
+
+  <!-- Halaman Menu -->
+  <section id="menuPage" class="hidden">
+    <h2>Menu Midnight Mug</h2>
+    <div id="menuList" class="menu-list"></div>
+    <button onclick="showCart()">Lihat Keranjang 🛒 (<span id="cartCount">0</span>)</button>
+    <button onclick="goHome()">Kembali</button>
+  </section>
+
+  <!-- Halaman Tambah Menu -->
+  <section id="addMenuPage" class="hidden">
+    <h2>Tambah Menu Baru</h2>
+    <form id="addMenuForm">
+      <input type="text" id="menuName" placeholder="Nama Menu" required>
+      <input type="number" id="menuPrice" placeholder="Harga (Rp)" required>
+      <input type="text" id="menuDesc" placeholder="Deskripsi" required>
+      <input type="file" id="menuImage" accept="image/*" required>
+      <button type="submit">Tambah Menu</button>
+    </form>
+    <button onclick="goHome()">Kembali</button>
+  </section>
+
+  <!-- Halaman Keranjang -->
+  <section id="cartPage" class="hidden">
+    <h2>Keranjang Belanja</h2>
+    <ul id="cartItems"></ul>
+    <button onclick="showCheckout()">Checkout</button>
+    <button onclick="showMenu()">Kembali</button>
+  </section>
+
+  <!-- Halaman Checkout -->
+  <section id="checkoutPage" class="hidden">
+    <h2>Checkout</h2>
+    <form id="checkoutForm">
+      <input type="text" id="custName" placeholder="Nama Anda" required>
+      <input type="text" id="custAddress" placeholder="Alamat Anda" required>
+      <select id="paymentMethod" required>
+        <option value="">Pilih Pembayaran</option>
+        <option value="ShopeePay">ShopeePay</option>
+        <option value="Dana">Dana</option>
+        <option value="GoPay">GoPay</option>
+        <option value="OVO">OVO</option>
+      </select>
+      <button type="submit">Pesan Sekarang</button>
+    </form>
+  </section>
+
+  <!-- Halaman Konfirmasi -->
+  <section id="confirmPage" class="hidden">
+    <h2>Pesanan Anda Diterima!</h2>
+    <p id="orderDetails"></p>
+    <p><strong>Kode Pembayaran:</strong> <span id="payCode"></span></p>
+    <button onclick="goHome()">Kembali ke Awal</button>
+  </section>
+
+  <!-- Footer Animasi -->
+  <section id="thankyou">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+      <span>☕ Terima Kasih Telah Mengunjungi Midnight Mug ☕</span>
+    </marquee>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
